@@ -4,7 +4,7 @@ attr_accessor :name, :birthday, :hair_color, :eye_color, :height,
 :wrist_size, :glove_size, :pant_length, :pant_widt
 
 def initialize(name_atributes)
-  name_atributes.each {|key, value| self.send((#{"key=}, value)}
+  name_atributes.each {|key, value| self.send(("#{key}="), value)}
 end 
 
 
